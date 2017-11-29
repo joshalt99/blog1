@@ -2,7 +2,7 @@
 
 @section('content')
 
-<main class="container">
+<main class="container-fluid">
 
     <div class="container-fluid">
         <div class="jumbotron">
