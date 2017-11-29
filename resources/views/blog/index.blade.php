@@ -1,11 +1,34 @@
-<h1>Latest Blog Posts</h1>
+@extends('layouts.app')
 
-<hr>
+@section('content')
 
-@foreach($blogs as $blog)
+<main class="container">
 
-    <h2> {{ $blog->title }} </h2>
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1>Latest Blog Posts</h1>
+        </div>
+        <div class="col-sm-12 col-sm-offset-1">
 
-    <p> {{ $blog->body }}</p>
+        @foreach($blogs as $blog)
 
-@endforeach
+            <artical>
+
+                <h2> {{ $blog->title }} </h2>
+                <p> {{ $blog->body }}</p>
+
+            </artical>
+        @endforeach
+        </div>
+
+    </div>
+
+</main>
+
+
+
+
+
+
+
+@endsection
