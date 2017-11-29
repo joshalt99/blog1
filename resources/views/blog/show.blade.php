@@ -7,7 +7,7 @@
         <div class="container-fluid">
             <article>
                 <div class="jumbotron">
-                    <h1>{{ $blog->title }}</h1>
+                    <h1>{{ $blog->title }}<a style="float: right;" href=" {{ action('BlogController@edit', [$blog->id]) }} ">Edit</a></h1>
                 </div>
                 <div class="col-sm-12 col-sm-offset-1">
 
