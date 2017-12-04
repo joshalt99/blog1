@@ -32,10 +32,16 @@
                     </button>
 
                     <!-- Branding Image -->
+                    <a class="navbar-brand" href="{{ url('/') }}">
+                        welcome
+                        {{--{{ config('app.name', 'Blog1') }}--}}
+                    </a>
+
                     <a class="navbar-brand" href="{{ url('/blog') }}">
                         Blog's
                         {{--{{ config('app.name', 'Blog1') }}--}}
                     </a>
+
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
@@ -81,5 +87,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+
+
 </body>
 </html>
