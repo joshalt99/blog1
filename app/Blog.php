@@ -12,11 +12,18 @@ class Blog extends Model
 
     protected $dates = ['deleted_at'];
 
-    protected $fillable = ['title', 'body'];
+    protected $fillable = ['title', 'body', 'photo_id'];
 
     public function category()
     {
         return $this->belongsToMany(Category::class);
+    }
+
+    public function photo()
+    {
+
+        return $this->belongsTo(Photo::class);
+
     }
 
 

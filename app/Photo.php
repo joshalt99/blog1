@@ -7,4 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 class Photo extends Model
 {
     //
+
+    protected $fillable = ['title', 'photo'];
+
+    public function blog()
+    {
+        $this->belongsTo(Blog::class);
+
+    }
 }
